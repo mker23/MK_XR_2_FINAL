@@ -7,8 +7,10 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f;
     public float rotationSpeed = 3f;
     public float maxVerticalRotation = 80f; // 최대 수직 회전 각도
+    public float jumpForce = 10f; // 점프 힘 조절을 위한 변수
 
     private float verticalRotation = 0f;
+    private bool isGrounded;
 
     private void Update()
     {
@@ -17,6 +19,12 @@ public class PlayerController : MonoBehaviour
 
         // 마우스 이동으로 카메라 회전 처리
         RotateCamera();
+
+        // 스페이스바를 눌렀을 때 점프 실행
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            Jump();
+        }
     }
 
     void MovePlayer()
@@ -43,7 +51,31 @@ public class PlayerController : MonoBehaviour
 
         mainCamera.transform.localRotation = Quaternion.Euler(verticalRotation, 0f, 0f);
     }
+
+    void Jump()
+    {
+        GetComponent<Rigidbody>().AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+    }
+
+    // 플레이어가 땅에 닿았을 때 호출되는 메서드
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
+    }
+
+    // 플레이어가 땅에서 떨어졌을 때 호출되는 메서드
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = false;
+        }
+    }
 }
+
 
 
 

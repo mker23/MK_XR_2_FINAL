@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3172514008064426445}
   - component: {fileID: -3037689664084954504}
   - component: {fileID: 2602235663287812102}
+  - component: {fileID: -1282835852107186771}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -116,6 +117,7 @@ MonoBehaviour:
   moveSpeed: 5
   rotationSpeed: 3
   maxVerticalRotation: 80
+  jumpForce: 7
 --- !u!114 &-3037689664084954504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,9 +130,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10b077d6ebf349044ad07da77699204f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashSpeed: 21
+  dashSpeed: 27
   dashDistance: 0.0001
-  maxDashTime: 0.7
+  maxDashTime: 0.3
 --- !u!54 &2602235663287812102
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -147,3 +149,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &-1282835852107186771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2461183414624560340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 203b2cd0e257dd143a2b09acf9f60015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crouchHeight: 0.5
+  crouchColliderHeight: 0.5
+  crouchCameraHeight: 0.9
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
