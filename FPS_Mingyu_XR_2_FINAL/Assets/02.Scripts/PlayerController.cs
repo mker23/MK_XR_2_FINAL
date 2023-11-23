@@ -44,12 +44,7 @@ public class PlayerController : MonoBehaviour
         // 수평 회전 (좌우 이동)
         transform.Rotate(Vector3.up * mouseX * rotationSpeed);
 
-        // 수직 회전 (상하 이동)
-        Camera mainCamera = Camera.main;
-        verticalRotation -= mouseY * rotationSpeed;
-        verticalRotation = Mathf.Clamp(verticalRotation, -maxVerticalRotation, maxVerticalRotation);
-
-        mainCamera.transform.localRotation = Quaternion.Euler(verticalRotation, 0f, 0f);
+        
     }
 
     void Jump()
@@ -60,7 +55,7 @@ public class PlayerController : MonoBehaviour
     // 플레이어가 땅에 닿았을 때 호출되는 메서드
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("GROUND"))
         {
             isGrounded = true;
         }
@@ -69,7 +64,7 @@ public class PlayerController : MonoBehaviour
     // 플레이어가 땅에서 떨어졌을 때 호출되는 메서드
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("GROUND"))
         {
             isGrounded = false;
         }
