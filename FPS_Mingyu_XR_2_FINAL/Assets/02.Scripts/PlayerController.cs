@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -9,8 +8,8 @@ public class PlayerController : MonoBehaviour
     public float maxVerticalRotation = 80f; // 최대 수직 회전 각도
     public float jumpForce = 10f; // 점프 힘 조절을 위한 변수
 
-    private float verticalRotation = 0f;
     private bool isGrounded;
+    private bool isMouseMoving = false; // 마우스 움직임 여부
 
     private void Update()
     {
@@ -41,10 +40,33 @@ public class PlayerController : MonoBehaviour
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = Input.GetAxis("Mouse Y");
 
-        // 수평 회전 (좌우 이동)
-        transform.Rotate(Vector3.up * mouseX * rotationSpeed);
+        // 마우스를 움직였을 때만 회전 처리
+        if (mouseX != 0 || mouseY != 0)
+        {
+            isMouseMoving = true;
 
-        
+            // 수평 회전 (좌우 이동)
+            transform.Rotate(Vector3.up * mouseX * rotationSpeed);
+
+            // 수직 회전 (상하 이동)
+            float verticalRotation = -mouseY * rotationSpeed;
+            Camera camera = GetComponentInChildren<Camera>();
+
+            // 현재 수직 회전 각도를 구함
+            float currentVerticalRotation = camera.transform.localEulerAngles.x;
+
+            // 새로운 수직 회전 각도를 계산
+            float newVerticalRotation = currentVerticalRotation + verticalRotation;
+
+
+            // 카메라의 수직 회전 적용
+            camera.transform.localEulerAngles = new Vector3(newVerticalRotation, 0f, 0f);
+        }
+        else
+        {
+            // 마우스를 움직이지 않으면 고정
+            isMouseMoving = false;
+        }
     }
 
     void Jump()
@@ -70,10 +92,3 @@ public class PlayerController : MonoBehaviour
         }
     }
 }
-
-
-
-
-
-
-

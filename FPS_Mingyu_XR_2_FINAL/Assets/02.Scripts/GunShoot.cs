@@ -24,11 +24,12 @@ public class GunShoot : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") || Input.GetMouseButtonDown(0))
+        if ((Input.GetButtonDown("Fire1") || Input.GetMouseButtonDown(0)) && !Input.GetKey(KeyCode.LeftControl))
         {
             Shoot();
         }
     }
+
 
     void Shoot()
     {
