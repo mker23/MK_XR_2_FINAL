@@ -1,23 +1,34 @@
+// SlashMove.cs
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SlashMove : MonoBehaviour
 {
-    public float speed = 5f; // 이동 속도 설정
+    public float moveSpeed = 5f; // 이동 속도
+    public Vector3 moveDirection = Vector3.forward; // 이동 방향
+    public float timeToDestroy = 5f; // 파괴까지의 시간
 
     void Start()
     {
-        // 초기 회전을 조절하여 X축으로 움직이도록 함
-        transform.Rotate(Vector3.up, 90f);
+        // 정면으로 이동하는 코루틴을 실행
+        StartCoroutine(MoveForward());
     }
 
-    void Update()
+    IEnumerator MoveForward()
     {
-        // X축 방향으로 이동
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+        while (true)
+        {
+            // 오브젝트를 현재 방향으로 이동
+            transform.Translate(-moveDirection * moveSpeed * Time.deltaTime);
+
+            yield return null;
+        }
     }
+
+   
+
+  
+
+
 }
-
-
-

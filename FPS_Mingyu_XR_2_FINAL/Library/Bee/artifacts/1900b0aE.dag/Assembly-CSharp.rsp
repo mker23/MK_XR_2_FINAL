@@ -347,6 +347,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/02.Scripts/Bullet_WallDestroy.cs"
 "Assets/02.Scripts/GunShoot.cs"
+"Assets/02.Scripts/LookAtPlayer.cs"
 "Assets/02.Scripts/PlayerController.cs"
 "Assets/02.Scripts/PlayerDash.cs"
 "Assets/02.Scripts/PlayerHealth.cs"
