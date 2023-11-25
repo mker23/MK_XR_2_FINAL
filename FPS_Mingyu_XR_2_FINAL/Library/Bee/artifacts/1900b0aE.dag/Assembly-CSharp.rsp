@@ -350,7 +350,10 @@
 "Assets/02.Scripts/PlayerController.cs"
 "Assets/02.Scripts/PlayerDash.cs"
 "Assets/02.Scripts/PlayerHealth.cs"
+"Assets/02.Scripts/SlashDestroy.cs"
 "Assets/02.Scripts/SlashMakerHealth.cs"
+"Assets/02.Scripts/SlashMove.cs"
+"Assets/02.Scripts/SlashSpawn.cs"
 -langversion:9.0
 
 /deterministic

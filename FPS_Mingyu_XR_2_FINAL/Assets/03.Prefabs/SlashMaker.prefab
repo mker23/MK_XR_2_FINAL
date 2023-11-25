@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5403092286450842955}
+  - component: {fileID: 3688621128292543599}
   m_Layer: 0
   m_Name: SlashFire
   m_TagString: Untagged
@@ -31,6 +32,21 @@ Transform:
   m_Father: {fileID: 4647503112144166889}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3688621128292543599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252927247809591782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50e4673aa54f2654f8b21ea4fd8f866d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SlashPrefab: {fileID: 4075575103900930227, guid: 7c7792d4015bfda46bc9ac982b4ac14e, type: 3}
+  spawnPosition: {x: 0, y: 2, z: 0}
+  spawnInterval: 2
 --- !u!1 &4647503110395687138
 GameObject:
   m_ObjectHideFlags: 0
@@ -45,7 +61,7 @@ GameObject:
   - component: {fileID: 4647503110395687136}
   m_Layer: 0
   m_Name: Cylinder (1)
-  m_TagString: MONSTER
+  m_TagString: SLASHMAKER
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,7 +159,7 @@ GameObject:
   - component: {fileID: 4647503111728502273}
   m_Layer: 0
   m_Name: Cylinder (2)
-  m_TagString: MONSTER
+  m_TagString: SLASHMAKER
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -241,7 +257,7 @@ GameObject:
   - component: {fileID: 4647503111870408711}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: MONSTER
+  m_TagString: SLASHMAKER
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

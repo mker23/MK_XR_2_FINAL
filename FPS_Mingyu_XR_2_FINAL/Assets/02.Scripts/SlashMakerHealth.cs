@@ -8,7 +8,7 @@ public class SlashMakerHealth : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "PLAYERBULLET")
+        if (collision.gameObject.CompareTag("PLAYERBULLET"))
         {
             TakeDamage(10);  // BULLET과 충돌 시 10만큼의 데미지를 받음
         }
@@ -27,10 +27,11 @@ public class SlashMakerHealth : MonoBehaviour
     void Die()
     {
         // 여기에 몬스터가 죽을 때 실행할 내용을 추가
-        Debug.Log("SLASHMAKER 몬스터가 죽었습니다!");
+        Debug.Log("SLASHMAKER 몬스터가 사망!");
         // 예를 들어, 몬스터 사망 애니메이션 재생, 점수 추가 등의 처리를 추가할 수 있습니다.
 
         // 몬스터 오브젝트 제거
         Destroy(gameObject);
     }
 }
+
