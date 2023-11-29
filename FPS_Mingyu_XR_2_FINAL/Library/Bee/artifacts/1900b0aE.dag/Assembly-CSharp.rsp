@@ -348,6 +348,7 @@
 "Assets/02.Scripts/GameManager.cs"
 "Assets/02.Scripts/Monster/MonsterController.cs"
 "Assets/02.Scripts/Monster/MonsterHealth.cs"
+"Assets/02.Scripts/MonsterSpawn.cs"
 "Assets/02.Scripts/Player/GunShoot.cs"
 "Assets/02.Scripts/Player/PlayerController.cs"
 "Assets/02.Scripts/Player/PlayerDash.cs"

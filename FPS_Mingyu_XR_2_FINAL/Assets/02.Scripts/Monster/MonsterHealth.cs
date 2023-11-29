@@ -12,8 +12,7 @@ public class MonsterHealth : MonoBehaviour
             // 총알이나 플레이어와 충돌 시 몬스터 사망 처리
             Die();
 
-            // 충돌한 오브젝트 삭제
-            Destroy(collision.gameObject);
+            
         }
     }
 
