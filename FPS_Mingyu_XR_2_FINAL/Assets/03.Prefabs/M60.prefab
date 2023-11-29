@@ -3884,7 +3884,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7640940949292850479}
-  - component: {fileID: 7890493680793307976}
   m_Layer: 0
   m_Name: M60
   m_TagString: Untagged
@@ -3952,20 +3951,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7890493680793307976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7008097878160066453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc52fb1af28491c4785ecba22d8bdb48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerCamera: {fileID: 0}
-  gunModel: {fileID: 7008097878160066453}
 --- !u!1 &7040678284425186236
 GameObject:
   m_ObjectHideFlags: 0

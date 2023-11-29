@@ -346,6 +346,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/02.Scripts/GameManager.cs"
+"Assets/02.Scripts/Monster/MonsterController.cs"
+"Assets/02.Scripts/Monster/MonsterHealth.cs"
 "Assets/02.Scripts/Player/GunShoot.cs"
 "Assets/02.Scripts/Player/PlayerController.cs"
 "Assets/02.Scripts/Player/PlayerDash.cs"

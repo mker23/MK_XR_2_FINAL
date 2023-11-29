@@ -9,11 +9,11 @@ public class PlayerHealth : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "BULLET")
+        if (collision.gameObject.CompareTag("MONSTER")) // MONSTER 태그와 충돌 시
         {
-            TakeDamage(10);  // 적중 시 10만큼의 데미지를 받음
+            TakeDamage(40);  // 충돌 시 40만큼의 데미지를 받음
         }
-        else if (collision.gameObject.tag == "SLASH")
+        else if (collision.gameObject.CompareTag("SLASH")) // SLASH 태그와 충돌 시
         {
             TakeDamage(20);  // SLASH에 맞을 시 20만큼의 데미지를 받음
         }
@@ -31,9 +31,9 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-     
         // GameOver 씬으로 전환
         SceneManager.LoadScene("GameOver");
     }
 }
+
 

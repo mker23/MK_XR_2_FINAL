@@ -178,7 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gunTip: {fileID: 5801158050026060451}
   bulletPrefab: {fileID: 2377429028200544518, guid: 40e97e1839674254fa89298052b73403, type: 3}
-  bulletSpeed: 90
+  bulletSpeed: 180
   bulletLifetime: 4
   gunshotSound: {fileID: 8300000, guid: 1b766da7cc2d648aa84e36cb5fe8abcb, type: 3}
 --- !u!1 &5801158049845318756
