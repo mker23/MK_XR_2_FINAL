@@ -243,6 +243,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlashMaker (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4647503112144166888, guid: 974ae1c0f63cb374faf238b52f5a2363, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4647503112144166889, guid: 974ae1c0f63cb374faf238b52f5a2363, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -352,6 +356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'SlashMaker '
       objectReference: {fileID: 0}
+    - target: {fileID: 4647503112144166888, guid: 974ae1c0f63cb374faf238b52f5a2363, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4647503112144166889, guid: 974ae1c0f63cb374faf238b52f5a2363, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -416,6 +424,10 @@ PrefabInstance:
     - target: {fileID: 4647503112144166888, guid: 974ae1c0f63cb374faf238b52f5a2363, type: 3}
       propertyPath: m_Name
       value: SlashMaker (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647503112144166888, guid: 974ae1c0f63cb374faf238b52f5a2363, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4647503112144166889, guid: 974ae1c0f63cb374faf238b52f5a2363, type: 3}
       propertyPath: m_RootOrder
@@ -549,14 +561,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.6568686, y: -0.18975952, z: 0.17600738, w: 0.70819235}
   m_LocalPosition: {x: 0, y: 23.4, z: 4.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 85.694, y: -30, z: 0}
 --- !u!1 &806918462
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,6 +761,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlashMaker (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4647503112144166888, guid: 974ae1c0f63cb374faf238b52f5a2363, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4647503112144166889, guid: 974ae1c0f63cb374faf238b52f5a2363, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -933,6 +949,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlashMaker
       objectReference: {fileID: 0}
+    - target: {fileID: 4647503112144166888, guid: 974ae1c0f63cb374faf238b52f5a2363, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4647503112144166889, guid: 974ae1c0f63cb374faf238b52f5a2363, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -1066,7 +1086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monsterPrefab: {fileID: 2451169373328969950, guid: 81309c694d6605d4cb7214cbe1eb9430, type: 3}
-  spawnInterval: 2
+  spawnInterval: 1
 --- !u!4 &1680250161
 Transform:
   m_ObjectHideFlags: 0
@@ -1279,7 +1299,12 @@ PrefabInstance:
       propertyPath: bulletSpeed
       value: 130
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6185776111889387432, guid: 66d94099ca6c69642a3f8be096b6c2a8, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6185776111889387432, guid: 66d94099ca6c69642a3f8be096b6c2a8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 66d94099ca6c69642a3f8be096b6c2a8, type: 3}
 --- !u!1001 &7261017459651368529
 PrefabInstance:
