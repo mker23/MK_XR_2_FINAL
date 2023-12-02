@@ -430,9 +430,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1323.9144, y: 645.5719, z: 74.07206}
+    m_Target: {x: -140.90707, y: 198.79541, z: 61.796936}
     speed: 2
-    m_Value: {x: 1323.9144, y: 645.5719, z: 74.07206}
+    m_Value: {x: -140.90707, y: 198.79541, z: 61.796936}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -479,13 +479,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.09225415, y: -0.0164281, z: 0.0015229031, w: 0.995596}
+    m_Target: {x: 0.039720945, y: 0.09129977, z: -0.0036442187, w: 0.99502254}
     speed: 2
-    m_Value: {x: 0.09225659, y: -0.01493473, z: 0.001384524, w: 0.99562234}
+    m_Value: {x: 0.039721012, y: 0.09129993, z: -0.003644225, w: 0.99502426}
   m_Size:
-    m_Target: 961.56213
+    m_Target: 665.6422
     speed: 2
-    m_Value: 1006.87134
+    m_Value: 665.6422
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -560,7 +560,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 48
+  controlID: 144
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -619,9 +619,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 78800000
-      m_LastClickedID: 32888
-      m_ExpandedIDs: 30b2ffff86b2ffffa4b3ffffb4b3ffffa2b7ffffaeb7ffffc0b9ffffe4dcffff6ee0ffff90f7ffffc2f7ffff14f8ffff62f8ffff38fbffff
+      m_SelectedIDs: 8e580000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 20ceffff48cfffffa2cfffffd2d3ffff2ed4ffff5ed8ffffb2d8ffff06d9ffff60d9ffff16e8ffff72e8ffffb4ecffff98f0fffffcf0ffff2cf5ffff96f5fffff4f9ffff38fbffff44600000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -809,20 +809,20 @@ MonoBehaviour:
       m_ResourceFile: 
   m_AssetTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 78800000
-    m_LastClickedID: 0
+    m_SelectedIDs: 8e580000
+    m_LastClickedID: 22670
     m_ExpandedIDs: ffffffff000000004c5800004e58000050580000525800005458000056580000585800005a5800005c5800005e58000060580000625800006458000066580000685800006a5800006c580000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: PlayerHealth
-      m_OriginalName: PlayerHealth
+      m_Name: Main
+      m_OriginalName: Main
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 5236
+      m_UserData: 22670
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -836,8 +836,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 78800000
-    m_LastClickedInstanceID: 32888
+    m_SelectedInstanceIDs: 8e580000
+    m_LastClickedInstanceID: 22670
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
